@@ -4,7 +4,7 @@ namespace MinJae.Chapter_04.NullConditionalOperator;
 
 public class MainApp
 {
-    static void Main(string[] args)
+    static void _Main(string[] args)
     {
         ArrayList a = null;
         a?.Add("축구");
