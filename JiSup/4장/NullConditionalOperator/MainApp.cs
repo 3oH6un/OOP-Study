@@ -4,7 +4,7 @@ namespace JiSup._4장.NullConditionalOperator;
 
 public class MainApp
 {
-    public static void Main(string[] args)
+    public static void Main__(string[] args)
     {
         ArrayList a = null; //a가 null값임으로 메모리 주소를 못받았음으로 출력을안함 
         a?.Add("야구");
