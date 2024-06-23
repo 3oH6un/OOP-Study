@@ -5,7 +5,7 @@ namespace YongBin._4장.NullConditionalOperator;
 
 public class MainApp
 {
-    public static void Main(string[] args)
+    public static void Main_(string[] args)
     {
         ArrayList a = null;
 
