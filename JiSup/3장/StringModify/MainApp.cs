@@ -3,7 +3,7 @@ namespace JiSup._3장.StringModify;
 
 public class MainApp
 {
-    public static void Main__(string[] args)
+    public static void Main_(string[] args)
     {
         WriteLine("ToLower() : '{0}'","ABC".ToLower());
         WriteLine("ToUpeer() : '{0}'","abc".ToUpper());

@@ -4,7 +4,7 @@ namespace JiSup._3장.Object;
 
 public class MainApp
 {
-    /*public static void Main(string[] args)
+    public static void Main_(string[] args)
     {
         object a = 123;
         object b = 3.141592653589793238462643383279m;
@@ -17,6 +17,6 @@ public class MainApp
         Console.WriteLine(d);
         
     }
-    */
+    
     
 }

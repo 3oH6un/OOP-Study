@@ -2,7 +2,7 @@
 
 public class MainApp
 {
-    /*public static void Main(string[] args)
+    public static void Main__(string[] args)
     {
         int a = 123;
         object b = (object)a;
@@ -21,5 +21,5 @@ public class MainApp
         Console.WriteLine(z);
 
     }
-    */
+    
 }

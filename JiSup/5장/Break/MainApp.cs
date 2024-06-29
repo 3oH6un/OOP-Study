@@ -14,7 +14,7 @@ public class MainApp
                 break;
                 
             }
-
+            //break 사용 반복문 하나를 나간다.  while(true)하나 밖에 없음으로 하나만 나간다.
 
         }
     }
