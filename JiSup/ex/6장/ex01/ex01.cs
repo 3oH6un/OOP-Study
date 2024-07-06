@@ -8,7 +8,7 @@ public class ex01
         return arg * arg;
     }
 
-    public static void Main(string[] args)
+    public static void _Main(string[] args)
     {
         Console.WriteLine("수를 입력하세요. : ");
         string input = Console.ReadLine();
