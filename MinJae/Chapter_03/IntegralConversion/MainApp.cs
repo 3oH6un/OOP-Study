@@ -13,7 +13,7 @@ public class MainApp
         int x = 128;
         Console.WriteLine(x);
 
-        sbyte y = (sbyte)x;
+        byte y = (byte)x;
         Console.WriteLine(y);
     }
 }
