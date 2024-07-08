@@ -9,7 +9,7 @@ public class MainApp
     {
         private string Name;
         private string Postition;
-
+        
         public void SetName(string Name)
         {
             this.Name = Name;
