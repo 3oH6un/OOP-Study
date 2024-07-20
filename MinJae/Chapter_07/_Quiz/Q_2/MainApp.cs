@@ -2,7 +2,7 @@ namespace MinJae.Chapter_07._Quiz.Q_2;
 
 public class MainApp
 {
-    static void Main(string[] args)
+    static void _Main(string[] args)
     {
         string hello = "hello";
         Console.WriteLine(hello.Append(", World!"));
