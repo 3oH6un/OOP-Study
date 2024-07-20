@@ -20,7 +20,7 @@ public class Cat
 
 public class MainApp
 {
-    public static void Main(string[] args)
+    public static void _Main(string[] args)
     {
         Cat cat1 = new Cat("키티","Black");
         Cat cat2 = new Cat(Color: "White", Name: "블랙");
