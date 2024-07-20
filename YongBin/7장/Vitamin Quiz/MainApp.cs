@@ -10,7 +10,7 @@ public static class StringExtension
 
 public class MainApp
 {
-    static void Main(string[] args)
+    static void Main_(string[] args)
     {
         string hello = "Hello";
         
