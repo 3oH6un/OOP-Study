@@ -27,7 +27,7 @@ class Derived : AbstractBase
 
 public class MainApp
 {
-    public static void Main(string[] args)
+    public static void _Main(string[] args)
     {
         AbstractBase obj = new Derived();
         
