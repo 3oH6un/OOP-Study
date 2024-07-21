@@ -2,7 +2,7 @@ namespace MinJae.Chapter_08.AbstractClass;
 
 public class MainApp
 {
-    static void Main(string[] args)
+    static void _Main(string[] args)
     {
         AbstractBase obj = new Derived();
         obj.AbstractMethodA();
