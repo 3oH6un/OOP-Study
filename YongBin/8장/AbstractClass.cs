@@ -4,7 +4,7 @@ abstract class AbstractBase
 {
     protected void PrivateMethodA()
     {
-        Console.WriteLine("AbstractBase.ProtectedMethodA()");
+        Console.WriteLine("AbstractBa'se.ProtectedMethodA()");
     }
 
     public void PublicMethodA()
