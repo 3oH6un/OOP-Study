@@ -9,17 +9,17 @@ class MyList : IEnumerable, IEnumerator
 
     public MyList()
     {
-        array = new int[3];
+        array = new int[3];             
     }
 
     public int this[int index]
     {
         get
         {
-            return array[index];
+            return array[index];                
         }
 
-        set
+        set                                     // for문
         {
             if (index >= array.Length)
             {
@@ -32,36 +32,36 @@ class MyList : IEnumerable, IEnumerator
     }
     
     // IEnumerator 멤버
-    public object Current
+    public object Current               // for-each 문 3)
     {
         get
         {
+            // return this[position];
             return array[position];
         }
     }
     
     // IEnumerator 멤버
-    public bool MoveNext()
+    public bool MoveNext()              // for-each 문 2) / 조건검사
     {
-        if (position == array.Length - 1)
+        if (position == array.Length - 1)               // 같을 경우
         {
-            Reset();
-            return false;
+            Reset();                                    
+            return false;                               // 종료
         }
-
         position++;
 
         return (position < array.Length);
     }
     
     // IEnumerator 멤버
-    public void Reset()
+    public void Reset()                 
     {
         position = -1;
     }
     
     // IEnumerator 멤버
-    public IEnumerator GetEnumerator()
+    public IEnumerator GetEnumerator()      // for-each 문 1) / 처음 시작 한번만 동작
     {
         return this;
     }
@@ -69,10 +69,10 @@ class MyList : IEnumerable, IEnumerator
 
 public class MainApp
 {
-    static void Main(string[] args)
+    static void Main_(string[] args)
     {
         MyList list = new MyList();
-
+        
         for (int i = 0; i < 5; i++)
         {
             list[i] = i;
@@ -80,7 +80,7 @@ public class MainApp
 
         foreach (int e in list)
         {
-            Console.WriteLine(e);
+            Console.WriteLine(e);  
         }
     }
 }
