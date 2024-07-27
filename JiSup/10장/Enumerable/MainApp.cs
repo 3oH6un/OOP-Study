@@ -31,6 +31,7 @@ class Mylist : IEnumerable, IEnumerator
         
     }
 
+    //IEnumerator 멤버
     public object Current
     {
         get
@@ -39,6 +40,7 @@ class Mylist : IEnumerable, IEnumerator
         }
     }
 
+    //IEnumerator 멤버
     public bool MoveNext()
     {
         if (position == array.Length - 1)
@@ -51,23 +53,26 @@ class Mylist : IEnumerable, IEnumerator
         return (position < array.Length);
     }
 
+    //IEnumerable 멤버
     public void Reset()
     {
         position = -1;
     }
 
-    public IEnumerator GetEnumerator()
+    public IEnumerator GetEnumerator() //처음시작
     {
         return this;
     }
     
 }
 
+
 public class MainApp
 {
-    public static void Main(string[] args)
+    public static void _Main(string[] args)
     {
         Mylist list = new Mylist();
+        
         for (int i = 0; i < 5; i++)
         {
             list[i] = i;
