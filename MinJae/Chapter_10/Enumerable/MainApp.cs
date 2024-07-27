@@ -4,11 +4,13 @@ namespace MinJae.Chapter_10.Enumerable;
 
 public class MainApp
 {
-    static void Main(string[] args)
+    static void _Main(string[] args)
     {
         MyList list = new MyList();
         for (int i = 0; i < 5; i++)
+        {
             list[i] = i;
+        }
 
         foreach (int e in list)
         {
@@ -19,56 +21,54 @@ public class MainApp
 
 class MyList : IEnumerable, IEnumerator
 {
-    private int[] array;
-    private int position = -1;
+    private int[] _array;
+    private int _position = -1;
 
     public MyList()
     {
-        array = new int[3];
+        _array = new int[3];
     }
 
     public int this[int index]
     {
-        get { return array[index]; }
+        get { return _array[index]; }
         set
         {
-            if (index >= array.Length)
+            if (index >= _array.Length)
             {
-                Array.Resize<int>(ref array, index + 1);
-                Console.WriteLine($"Array Resized : {array.Length}");
+                Array.Resize<int>(ref _array, index + 1);
+                Console.WriteLine($"Array Resized : {_array.Length}");
             }
 
-            array[index] = value;
+            _array[index] = value;
         }
     }
 
     public object Current
     {
-        get { return array[position]; }
+        get { return _array[_position]; }
     }
 
 
     public bool MoveNext()
     {
-        if (position == array.Length - 1)
+        if (_position == _array.Length - 1)
         {
             Reset();
             return false;
         }
 
-        position++;
-        return (position < array.Length);
+        _position++;
+        return (_position < _array.Length);
     }
 
     public void Reset()
     {
-        position = -1;
+        _position = -1;
     }
 
     public IEnumerator GetEnumerator()
     {
         return this;
     }
-
-
 }
