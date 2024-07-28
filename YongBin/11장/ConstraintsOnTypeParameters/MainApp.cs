@@ -45,7 +45,7 @@ public class MainApp
         return new T();
     }
 
-    static void Main(string[] args)
+    static void Main_(string[] args)
     {
         StructArray<int> a = new StructArray<int>(3);           // new로 만들어진 객체만 값이 전달이 됨
 
