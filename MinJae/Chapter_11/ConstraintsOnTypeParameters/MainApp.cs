@@ -2,7 +2,7 @@ namespace MinJae.Chapter_11.ConstraintsOnTypeParameters;
 
 public class MainApp
 {
-    static void Main(string[] args)
+    static void _Main(string[] args)
     {
         StructArray<int> a = new StructArray<int>(3);
         a.Array[0] = 0;
