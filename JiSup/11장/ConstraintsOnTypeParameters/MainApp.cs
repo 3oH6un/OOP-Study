@@ -51,7 +51,7 @@ public class MainApp
         return new T();
     }
     
-    public static void Main(string[] args)
+    public static void _Main(string[] args)
     
     {
         StructArray<int> a = new StructArray<int>(3);
